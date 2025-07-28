@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portafolio - Kennedy Beltrés</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #0e0f11;
+      color: #f5f5f5;
+      line-height: 1.6;
+    }
+
+    header {
+      background: rgba(20, 20, 30, 0.95);
+      padding: 20px 50px;
+      display: flex;
+      justify-content: center;
+      gap: 60px;
+      position: sticky;
+      top: 0;
+      z-index: 999;
+      backdrop-filter: blur(10px);
+      box-shadow: 0 2px 12px rgba(0, 255, 255, 0.1);
+    }
+
+    header a {
+      color: #00ffff;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 16px;
+      position: relative;
+      transition: color 0.3s;
+    }
+
+    header a::after {
+      content: "";
+      position: absolute;
+      bottom: -5px;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background-color: #00ffff;
+      transition: width 0.3s ease;
+    }
+
+    header a:hover::after {
+      width: 100%;
+    }
+
+    section {
+      padding: 80px 40px;
+      min-height: 100vh;
+    }
+
+    #inicio {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: 40px;
+      background: radial-gradient(circle, #1b2b44, #121b29);
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(0, 255, 255, 0.05);
+    }
+
+    .image-section {
+      flex: 1 1 40%;
+      display: flex;
+      justify-content: center;
+    }
+
+    .image-section img {
+      width: 100%;
+      max-width: 420px;
+      border-radius: 20px;
+      box-shadow: 0 12px 25px rgba(0, 255, 255, 0.2);
+    }
+
+    .text-section {
+      flex: 1 1 50%;
+      max-width: 600px;
+      animation: fadeIn 1s ease forwards;
+    }
+
+    .text-section h2 {
+      font-size: 2.3em;
+      color: #00ffff;
+      margin-bottom: 15px;
+    }
+
+    .text-section span {
+      color: #00bfff;
+    }
+
+    .text-section p {
+      font-size: 1.1em;
+      margin-bottom: 20px;
+      color: #d4d4d4;
+    }
+
+    .social-buttons a {
+      display: inline-block;
+      margin: 8px 10px 8px 0;
+      padding: 12px 24px;
+      background: #00bfff;
+      color: #fff;
+      border-radius: 30px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 12px rgba(0, 191, 255, 0.3);
+    }
+
+    .social-buttons a:hover {
+      background: #00ffff;
+      color: #1b1b1b;
+      transform: translateY(-2px);
+    }
+
+    #sobremi, #curriculum {
+      background: #141c26;
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(0, 255, 255, 0.03);
+      margin-top: 30px;
+    }
+
+    section h2 {
+      font-size: 2em;
+      color: #00ffff;
+      margin-bottom: 20px;
+    }
+
+    section p {
+      font-size: 1.1em;
+      color: #cdd2d6;
+    }
+
+    .social-buttons {
+      margin-top: 20px;
+    }
+
+    footer {
+      background-color: #00bfff;
+      color: #000;
+      text-align: center;
+      padding: 20px;
+      font-weight: bold;
+      font-size: 15px;
+      border-top-left-radius: 12px;
+      border-top-right-radius: 12px;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @media screen and (max-width: 768px) {
+      section {
+        padding: 60px 20px;
+      }
+
+      header {
+        flex-wrap: wrap;
+        gap: 20px;
+      }
+
+      .text-section h2 {
+        font-size: 1.8em;
+      }
+
+      .image-section img {
+        max-width: 300px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <a href="#inicio">Inicio</a>
+    <a href="#sobremi">Sobre mí</a>
+    <a href="#curriculum">Currículum</a>
+  </header>
+
+  <section id="inicio">
+    <div class="image-section">
+      <img src="WhatsApp Image 2025-07-28 at 13.12.09_c26fcba2.jpg" alt="Wilfri De Morla 23-SISN-2-025" />
+    </div>
+
+    <div class="text-section">
+      <h2>Eleva tu negocio digital a otro nivel con <span>Blendel y Diseños únicos</span>!</h2>
+      <p>¡Hola! Soy Wilfri De Morla, 🧠 Aprendiendo cada día | 🎨 Apasionado por el diseño 3D en Blender | 🚀 Explorando nuevas ideas y formas de crear</p>
+
+      <h3>Accede a mis redes sociales:</h3>
+      <div class="social-buttons">
+        <a href="https://www.instagram.com" target="_blank">📷 Instagram</a>
+        <a href="https://github.com" target="_blank">💻 Github</a>
+        <a href="https://do.linkedin.com" target="_blank">🔗 LinkedIn</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="sobremi">
+    <h2>Sobre mí</h2>
+    <p>
+      Desde muy joven, siempre me ha apasionado crear cosas desde cero, explorar ideas y transformar lo imaginario en algo visual. Descubrí el diseño 3D y el diseño gráfico como formas de expresión creativa, y encontré en Blender una herramienta poderosa para dar vida a mis ideas.
+      <br><br>
+      Además del arte digital, me interesa profundamente el mundo del trading. Me atrae el análisis, la estrategia y la toma de decisiones en tiempo real, lo que me permite desarrollar una mentalidad disciplinada y enfocada, que también aplico en mis proyectos creativos.
+      <br><br>
+      Me encanta aprender constantemente, experimentar con nuevas técnicas y mejorar en cada proyecto. Disfruto tanto del proceso como del resultado, y estoy en un camino constante de crecimiento. Cada día es una oportunidad para descubrir algo nuevo, inspirarme y seguir creando, ya sea en el mundo visual o en el financiero.
+    </p>
+  </section>
+
+  <section id="curriculum">
+    <h2>Currículum</h2>
+    <div class="social-buttons">
+      <a href="https://drive.google.com/file/d/1IisYwcI-EQpA0-ZtzfBC1r1KvUQh7UVY/view?usp=drive_link" target="_blank">📄 Ver Currículum</a>
+    </div>
+  </section>
+
+  <footer>
+    Echo Por Wilfri De Morla 23-SISN-2-025
+  </footer>
+
+</body>
+</html>
